@@ -79,7 +79,7 @@ func (c *OAuth2Cmd) AuthorizationCodeGrantFlow(clientConfig oauth2.ClientConfig,
 	LogSection("Exchange authorization code for token")
 
 	// token exchange
-	exchangeStatus := LogAction("Exchaging authorization code for access token")
+       exchangeStatus := LogAction("Exchanging authorization code for access token")
 
 	if tokenRequest, tokenResponse, err = oauth2.RequestToken(
 		context.Background(),
